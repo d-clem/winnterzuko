@@ -1,0 +1,37 @@
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: calc(5vw);
+}
+
+.main-grid > div {
+    width: calc(100% - 30px);
+    height: calc(30vh);
+    background-color: var(--secondary);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media screen and (max-width: 880px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+        margin: calc(10vw);
+    }
+    
+}
+
+@media screen and (max-width: 560px) {
+    .main-grid {
+        margin: 0;
+    }
+    
+}

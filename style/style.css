@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+
+:root {
+    --text: #180202;
+    --background: #fafafa;
+    --primary: #74e7b3;
+    --secondary: #c3c1c1;
+    --accent: #8700fc;
+
+    
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+    color: var(--text);
+}
+
+body {
+    background-color: var(--background);
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+
+    gap: calc(5vw);
+
+    padding-left: calc(7.5vw);
+}
+
+/* fix footer to bottom  */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: .875rem;
+}
+
+h6 {
+    font-size: .75rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: var(--accent);
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px; 
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: var(--accent); 
+    transition: width 0.3s ease; 
+}
+
+a:hover::before {
+    width: 100%;
+}
+
+button {
+    height: 40px;
+    width: 200px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-primary {
+    color: var(--text);
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+
+.btn-secondary {
+    color: var(--text);
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.accent {
+    color: var(--accent);
+}
