@@ -8,9 +8,22 @@
 }
 
 .green-card {
-    background-color: var(--primary);
+    background-color: var(--primary) !important;
 }
 
-.gray-card {
-    background-color: var(--secondary);
+#up {
+    text-align: center;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    bottom: 20px;
+    right: 30px;
+    border: solid 3px var(--accent);
+    border-radius: 50%;
+    /* bring it to foreground */
+    z-index: 1;
+}
+
+#up::before {
+    bottom: -5px;
 }

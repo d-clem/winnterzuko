@@ -5,6 +5,16 @@ class SongCard
 
     const COVER_SIZE = 200;
 
+    const prefs = [
+        "Off",
+        "Trotski",
+        "Serpentard",
+        "Deep Girl",
+        "Oxygène",
+        "Jeep",
+        "Network"
+    ];
+
     private $id;
     private $title;
     private $project;
@@ -12,6 +22,7 @@ class SongCard
     private $feats;
     private $cover_url;
     private $mp3_url;
+    private $class;
 
     public function __construct(array $json_data) 
     {
@@ -26,12 +37,16 @@ class SongCard
 
         $this->mp3_url = $json_data['MEDIA'][0]['HREF'];
 
+        if (in_array($this->title, self::prefs)) {
+            $this->class = "green-card";
+        }
+
     }
 
     public function getHtml() : string
     {
 
-        $html = "<div>";
+        $html = "<div class='$this->class'>";
 
         $html .= "<div>";
 

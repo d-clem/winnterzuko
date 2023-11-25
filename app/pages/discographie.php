@@ -14,11 +14,11 @@
         <hr>
 
         <nav>
-            <a href="../index.html">
+            <a href="../index.php">
                 Accueil
             </a>
 
-            <a href="discographie.html">
+            <a href="discographie.php">
                 Discographie
             </a>
 
@@ -35,6 +35,19 @@
         <hr>
     </header>
 
+
+    <a href="#header" id="up">
+        <span class="fa fa-arrow-up"></span>
+
+    </a>
+    <br><br>
+
+    <h3>
+        Titres de Winnterzuko classés par popularité (Sur Deezer)
+    </h3>
+    <h5>
+        Vous trouverez en vert mes titres préférés
+    </h5>
 
     <?php
 
@@ -68,11 +81,7 @@
 
     ?>
 
-    <br><br>
-
-    <h3>
-        Titres de Winnterzuko classés par popularité (Sur Deezer)
-    </h3>
+    
 
     <br><br>
 
