@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Discographie</title>
+    <title>Titre aléatoire</title>
 
     <link rel="stylesheet" href="../../style/all.css">
 
@@ -35,20 +35,9 @@
         <hr>
     </header>
 
+    <br>
 
-    <a href="#header" id="up">
-        <span class="fa fa-arrow-up"></span>
-
-    </a>
-    <br><br>
-
-    <h3>
-        Titres de Winnterzuko classés par popularité (Sur Deezer)
-    </h3>
-    <h5>
-        Vous trouverez en vert mes titres préférés
-    </h5>
-
+    
     <?php
 
     $liste_titres = array();
@@ -59,25 +48,26 @@
         echo "Désolé, une erreur est survenue lors du chargerment d'un fichier";
     }
 
-
     ?>
-
     
 
-    <br><br>
-
-    <div class="main-grid">
+    <div class="grille-single">
+        <h3>
+            Titre aléatoire
+        </h3>
         
         <?php
 
-        foreach ($liste_titres as $song) {
-            echo $song->getHtml();
-        }
+        $random_song = $liste_titres[array_rand($liste_titres)];
+
+        echo $random_song->getHTML();
 
         ?>
+
     </div>
 
-    <br><br><br>
+    <br>
+
 
     <footer id="footer">
 

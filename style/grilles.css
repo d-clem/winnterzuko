@@ -5,7 +5,7 @@
     gap: calc(5vw);
 }
 
-.main-grid > div {
+.main-grid > div, .grille-single > div {
     width: calc(100% - 30px);
     height: calc(37.5vh);
 
@@ -48,4 +48,27 @@
         margin: 0;
     }
     
+}
+
+
+.grille-single {
+    text-align: center;
+    width: calc(100% - 20vw);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: calc(1vw);
+    padding: 0 calc(10vw);
+}
+
+.grille-single > div {
+    width: 50%;
+    text-align: left;
+}
+
+.grille-single > div > a {
+    text-align: center;
 }

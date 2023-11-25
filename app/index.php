@@ -22,7 +22,7 @@
                 Discographie
             </a>
 
-            <a href="">
+            <a href="./pages/random_song.php">
                 Titre aléatoire
             </a>
 

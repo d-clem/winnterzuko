@@ -56,8 +56,21 @@ class SongCard
 
         $html .= "<br>";
 
+        $minutes = floor($this->duration / 60);
+        $seconds = $this->duration % 60;
+
+        if ($seconds < 10) {
+            $seconds = "0" . $seconds;
+        } else {
+            $seconds = "" . $seconds;
+        }
+
+
+
         // format the duration from seconds to minutes:seconds
-        $html .= "<span> <h6> Durée : </h6>0" . floor($this->duration / 60) . ":" . $this->duration % 60 . "</span>";
+        $html .= "<span> <h6> Durée : </h6>0" 
+            . $minutes . ":" . $seconds
+            . "</span>";
 
         $feat = empty(implode(", ", $this->feats)) ? "Aucun" : implode(", ", $this->feats);
 
@@ -85,7 +98,7 @@ class SongCard
             . $this->mp3_url
             . "\"></audio>";
 
-        $html .= "</div>";
+        $html .= "</div> <!-- end of card --> \n\n\t\t";
 
         return $html;
     }
