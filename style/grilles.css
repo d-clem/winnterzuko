@@ -7,7 +7,7 @@
 
 .main-grid > div {
     width: calc(100% - 30px);
-    height: calc(30vh);
+    height: calc(37.5vh);
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -16,6 +16,16 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 15px;
+
+}
+
+.main-grid > div > div {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.main-grid > div > div::-webkit-scrollbar {
+    width: 0px;
 }
 
 @media screen and (max-width: 1200px) {

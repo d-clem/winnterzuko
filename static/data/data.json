@@ -380,14 +380,14 @@
                 "SNG_TITLE": "Kino",
                 "ART_ID": "14699063",
                 "PROVIDER_ID": "3",
-                "ART_NAME": "Le R\\u00e8glement",
+                "ART_NAME": "Le Règlement",
                 "ARTIST_IS_DUMMY": false,
                 "ARTISTS": [
                     {
                         "ART_ID": "14699063",
                         "ROLE_ID": "0",
                         "ARTISTS_SONGS_ORDER": "2",
-                        "ART_NAME": "Le R\\u00e8glement",
+                        "ART_NAME": "Le Règlement",
                         "ARTIST_IS_DUMMY": false,
                         "ART_PICTURE": "63a0c5221e150716c86b7ed2b2914f20",
                         "RANK": "601787",
@@ -452,7 +452,7 @@
                         "abel31"
                     ],
                     "main_artist": [
-                        "Le R\\u00e8glement",
+                        "Le Règlement",
                         "winnterzuko"
                     ]
                 },
@@ -869,7 +869,7 @@
                 "SNG_ID": "2317495055",
                 "PRODUCT_TRACK_ID": "1535333565",
                 "UPLOAD_ID": 0,
-                "SNG_TITLE": "Thorfinn - La Rel\\u00e8ve",
+                "SNG_TITLE": "Thorfinn - La Relève",
                 "ART_ID": "88895962",
                 "PROVIDER_ID": "2",
                 "ART_NAME": "winnterzuko",
@@ -890,7 +890,7 @@
                         "ART_ID": "217758295",
                         "ROLE_ID": "0",
                         "ARTISTS_SONGS_ORDER": "2",
-                        "ART_NAME": "La Rel\\u00e8ve",
+                        "ART_NAME": "La Relève",
                         "ARTIST_IS_DUMMY": false,
                         "ART_PICTURE": "d47f453e18bb04332d9ddf23b4e53fbb",
                         "RANK": "486931",
@@ -899,7 +899,7 @@
                     }
                 ],
                 "ALB_ID": "450238865",
-                "ALB_TITLE": "Thorfinn - La Rel\\u00e8ve",
+                "ALB_TITLE": "Thorfinn - La Relève",
                 "TYPE": 0,
                 "VIDEO": false,
                 "DURATION": "199",
@@ -939,7 +939,7 @@
                     "artist": [
                         "winnterzuko",
                         "La Releve",
-                        "winnterzuko & La Rel\\u00e8ve"
+                        "winnterzuko & La Relève"
                     ],
                     "author": [
                         "winnterzuko"
@@ -1138,7 +1138,7 @@
                 "SNG_ID": "2078013977",
                 "PRODUCT_TRACK_ID": "1394145737",
                 "UPLOAD_ID": 0,
-                "SNG_TITLE": "Oxyg\\u00e8ne (feat. winnterzuko)",
+                "SNG_TITLE": "Oxygène (feat. winnterzuko)",
                 "ART_ID": "9467778",
                 "PROVIDER_ID": "2",
                 "ART_NAME": "Ghost Killer Track",
@@ -1752,7 +1752,7 @@
                         "winnterzuko"
                     ],
                     "composer": [
-                        "Bad\\u00e8me"
+                        "Badème"
                     ],
                     "main_artist": [
                         "winnterzuko"
@@ -5969,7 +5969,7 @@
                         "Odbussy"
                     ],
                     "main_artist": [
-                        "Multi-interpr\\u00e8tes",
+                        "Multi-interprètes",
                         "Beamer",
                         "winnterzuko",
                         "Odbussy"

@@ -14,11 +14,11 @@
         <hr>
 
         <nav>
-            <a href="index.html">
+            <a href="index.php">
                 Accueil
             </a>
 
-            <a href="./pages/discographie.html">
+            <a href="./pages/discographie.php">
                 Discographie
             </a>
 

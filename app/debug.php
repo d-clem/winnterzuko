@@ -15,11 +15,11 @@
         <hr>
 
         <nav>
-            <a href="index.html">
+            <a href="index.php">
                 Accueil
             </a>
 
-            <a href="./pages/discographie.html">
+            <a href="./pages/discographie.php">
                 Discographie
             </a>
 
@@ -68,40 +68,53 @@
 
     <br><br><br><br>
 
+
+    <?php
+
+    require("utils/SongCard.php");
+
+    // open the file data.json
+    $FILE_PATH = "../static/data/data.json";
+
+    $liste_titres = array();
+
+    // read the file
+    try {
+        $file_content = file_get_contents($FILE_PATH);
+        
+        // decode the file
+        $json = json_decode($file_content, true);
+
+        // create a SongCard for each song
+        foreach ($json["TOP"]["data"] as $data_song) {
+            $liste_titres[] = new SongCard($data_song);
+        }
+
+    } catch (Exception $e) {
+
+    }
+
+    ?>
+
+    <h3>
+        Titres de Winnterzuko classés par popularité (Sur Deezer)
+    </h3>
+
+    <br><br>
+
     <div class="main-grid">
-        <div>
-            <h2>Le titre</h2>
-            <p>Le projet</p>
-            <p>La durée</p>
-            <p>Les feats</p>
-        </div>
-        <div>
-            <h2>Le titre</h2>
-            <p>Le projet</p>
-            <p>La durée</p>
-            <p>Les feats</p>
-        </div>
-        <div>
-            <h2>Le titre</h2>
-            <p>Le projet</p>
-            <p>La durée</p>
-            <p>Les feats</p>
-        </div>
-        <div>
-            <h2>Le titre</h2>
-            <p>Le projet</p>
-            <p>La durée</p>
-            <p>Les feats</p>
-        </div>
-        <div>
-            <h2>Le titre</h2>
-            <p>Le projet</p>
-            <p>La durée</p>
-            <p>Les feats</p>
-        </div>
+    
+        <?php
+
+        foreach ($liste_titres as $song) {
+            echo $song->getHtml();
+        }
+
+        ?>
+
     </div>
 
-    <br><br><br><br>
+
     <br><br><br><br>
 
 

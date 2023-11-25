@@ -6,3 +6,11 @@
     width: 200px;
     border: solid 3px var(--accent);
 }
+
+.green-card {
+    background-color: var(--primary);
+}
+
+.gray-card {
+    background-color: var(--secondary);
+}
