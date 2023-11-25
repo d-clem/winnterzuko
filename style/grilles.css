@@ -8,6 +8,10 @@
 .main-grid > div {
     width: calc(100% - 30px);
     height: calc(30vh);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
     background-color: var(--secondary);
     padding-left: 15px;
     padding-right: 15px;

@@ -32,11 +32,13 @@ nav {
     padding-left: calc(7.5vw);
 }
 
-/* fix footer to bottom  */
+main {
+    padding: calc(5vw);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     text-align: center;
 }
 
@@ -96,6 +98,11 @@ a::before {
 
 a:hover::before {
     width: 100%;
+}
+
+img {
+    max-width: min(100%, 350px);
+    height: auto;
 }
 
 button {
