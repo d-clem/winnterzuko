@@ -14,20 +14,28 @@
         <hr>
 
         <nav>
-            <a href="../index.php">
-                Accueil
+            <a href="./index.php">
+                <p>
+                    Accueil
+                </p>
             </a>
 
-            <a href="./discographie.php">
-                Discographie
+            <a href="../app/pages/discographie.php">
+                <p>
+                    Discographie
+                </p>
             </a>
 
-            <a href="./random_song.php">
-                Titre aléatoire
+            <a href="../app/pages/random_song.php">
+                <p>
+                    Titre aléatoire
+                </p>    
             </a>
 
             <a href="#footer">
-                Crédits
+                <p>
+                    Crédits
+                </p>
             </a>
 
         </nav>
