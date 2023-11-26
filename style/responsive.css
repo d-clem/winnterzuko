@@ -21,6 +21,10 @@
         margin: calc(10vw);
     }    
 
+    .main-grid > div, .grille-single > div {
+        height: calc(35vh);
+    }
+
     nav {
         padding-left: 10px;
         gap: 1em;
