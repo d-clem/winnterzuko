@@ -28,7 +28,7 @@
 
 .main-grid > div, .grille-single > div {
     width: calc(100% - 30px);
-    height: calc(35vh);
+    height: calc(37.5vh);
 
     min-height: 300;
 
