@@ -14,7 +14,7 @@
         <hr>
 
         <nav>
-            <a href="./app/index.php">
+            <a href="../index.php">
                 Accueil
             </a>
 

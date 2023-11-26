@@ -14,15 +14,15 @@
         <hr>
 
         <nav>
-            <a href="./app/index.php">
+            <a href="../index.php">
                 Accueil
             </a>
 
-            <a href="./pages/discographie.php">
+            <a href="./discographie.php">
                 Discographie
             </a>
 
-            <a href="./pages/random_song.php">
+            <a href="./random_song.php">
                 Titre aléatoire
             </a>
 
