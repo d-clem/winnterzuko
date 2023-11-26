@@ -79,13 +79,7 @@
         </p>
 
         <p>
-            Crédits photos :             
-
-            <a href="https://genius.com/artists/Winnterzuko/" target="_blank">
-                Genius
-            </a>
-
-            &nbsp; | &nbsp;
+            Crédits photos et audio :             
 
             <a href="https://www.deezer.com/fr/artist/88895962" target="_blank">
                 Deezer

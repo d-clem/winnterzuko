@@ -41,13 +41,9 @@
             <h1>
                 Présentation de Winnterzuko
             </h1>
+
             <p>
-                Originaire d'un pays de l'Est, Winnterzuko est un artiste qui a su se faire une place dans le rap français.
-                
-            </p>
-                
-            <p>
-                Toujours masqué lorsqu'il rappe, il garde cepentant une articulation parfaite
+                Winnterzuko (a.k.a w-zuko) est toujours masqué lorsqu'il rappe, il garde cepentant une articulation parfaite
                 accompagnée d'un flow rapide et précis.
 
             </p>
@@ -55,9 +51,11 @@
             <p>
                 Arrivé en France en tant que réfugié de guerre avec sa mère et ses soeurs, 
                 Winnterzuko fait souvent référence à ces dernières dans ses sons.
-                <br>
-                Il fait également souvent référence à Madou un des ses meilleurs amis avec Leoh. 
-                Ces deux amis le suive continuellement dans ses concerts, 
+            </p>
+
+            <p>
+                Il fait également des références à Madou (comme dans le titre gearless) un des ses meilleurs amis avec Leoh. 
+                Ses deux amis le suivent continuellement dans ses concerts, 
                 Madou performe régulièrment avec lui sur scène.
                 Tandis que Leoh reste dans les coulisses et prends de nombreuses photos.
             </p>
@@ -81,13 +79,7 @@
         </p>
 
         <p>
-            Crédits photos :             
-
-            <a href="https://genius.com/artists/Winnterzuko/" target="_blank">
-                Genius
-            </a>
-
-            &nbsp; | &nbsp;
+            Crédits photos et audio :             
 
             <a href="https://www.deezer.com/fr/artist/88895962" target="_blank">
                 Deezer

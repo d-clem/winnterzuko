@@ -3,11 +3,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: calc(5vw);
+
+    min-height: 50vh;
 }
 
 .main-grid > div, .grille-single > div {
     width: calc(100% - 30px);
     height: calc(37.5vh);
+
+    min-height: 300;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
