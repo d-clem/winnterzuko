@@ -3,12 +3,12 @@
 try {
     require "../utils/SongCard.php";
 } catch (Throwable $e) {
-    echo "Désolé, une erreur est survenue lors du chargerment d'un fichier";
+    echo "Désolé, une erreur est survenue lors du chargerment d'un fichier (SongCard.php)";
 }
 
 
 // open the file data.json
-$FILE_PATH = "../../static/data/data.json";
+$FILE_PATH = "../../static/data/data_off.json";
 
 $liste_titres = array();
 
@@ -25,7 +25,7 @@ try {
     }
 
 } catch (Throwable $e) {
-    echo "Désolé, une erreur est survenue lors du chargerment d'un fichier";
+    echo "Désolé, une erreur est survenue lors du chargerment d'un fichier (data.json)";
 }
 
 return $liste_titres;

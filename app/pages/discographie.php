@@ -46,7 +46,9 @@
         Titres de Winnterzuko classés par popularité (Sur Deezer)
     </h3>
     <h5>
-        Vous trouverez en vert mes titres préférés
+        Vous trouverez en
+            <span class="green-text">&nbsp; VERT &nbsp;</span> 
+        mes titres préférés
     </h5>
 
     <?php
@@ -56,7 +58,8 @@
     try {
         $liste_titres = require "../utils/titles.php";
     } catch (Throwable $e) {
-        echo "Désolé, une erreur est survenue lors du chargerment d'un fichier";
+        echo "Désolé, une erreur est survenue lors du chargerment d'un fichier (titles.php)";
+        echo $e->getMessage();
     }
 
 

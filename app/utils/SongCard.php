@@ -17,9 +17,15 @@ class SongCard
 
     private $id;
     private $title;
+    
     private $project;
+    private $album_url;
+
     private $duration;
+    
     private $feats;
+    
+
     private $cover_url;
     private $mp3_url;
     private $class;
@@ -29,9 +35,12 @@ class SongCard
         $this->id = $json_data['SNG_ID'];
         $this->title = self::getTitleFromJson($json_data);
         $this->project = $json_data['ALB_TITLE'];
+        $this->album_url = self::getAlbumUrl($json_data['ALB_ID']);
+
         $this->duration = $json_data['DURATION'];
         $this->feats = self::getFeatsFromJson($json_data['ARTISTS']);
         
+        // si je souhaite afficher le cover avec le widget deezer
         // $this->cover_url = self::getCoverUrlFromDeeze($this->id);
         $this->cover_url = self::getCover($json_data['ALB_PICTURE']);
 
@@ -52,7 +61,11 @@ class SongCard
 
         $html .= "<h4>" . $this->title . "</h4>";
 
-        $html .= "<span> <h6> Album : </h6>" . $this->project . "</span>";
+        $html .= "<span> <h6> Album : </h6>" 
+            . "<a href=\"" . $this->album_url . "\" target=\"_blank\">"
+                . $this->project 
+            . "</a>"
+            . "</span>";
 
         $html .= "<br>";
 
@@ -72,7 +85,23 @@ class SongCard
             . $minutes . ":" . $seconds
             . "</span>";
 
-        $feat = empty(implode(", ", $this->feats)) ? "Aucun" : implode(", ", $this->feats);
+        $feat = "";
+
+        if (empty(implode(", ", $this->feats))) {
+            $feat = "Aucun";
+        } else {
+            // link each feat to its deezer page
+            foreach ($this->feats as $key => $value) {
+                $feat .= "<a href=\"https://www.deezer.com/fr/artist/"
+                    . $key
+                    . "\" target=\"_blank\">"
+                    . $value
+                    . "</a>"
+                    . ", ";
+            }
+            // remove the last comma
+            $feat = substr($feat, 0, -2);
+        }
 
         $html .= "<span> <h6> Feats : </h6>" 
                 . $feat
@@ -81,9 +110,8 @@ class SongCard
         $html .= "</div>";
 
         // $html .= $this->cover_url;
-
-         // wrap the cover in a link to the deezer page
-
+        
+        // wrap the cover in a link to the deezer page
         $html .= "<a href=\"https://www.deezer.com/fr/track/"
                 . $this->id
                 . "\" target=\"_blank\">";
@@ -114,12 +142,17 @@ class SongCard
 
     }
 
+    public static function getAlbumUrl(string $album_id) : string 
+    {
+        return "https://www.deezer.com/fr/album/" . $album_id;
+    }
+
     public static function getFeatsFromJson(array $json_data) : array
     {
         $feats = [];
         foreach ($json_data as $feat) {
             if ($feat['ART_NAME'] != "winnterzuko") {
-                $feats[] = $feat['ART_NAME'];
+                $feats[$feat['ART_ID']] = $feat['ART_NAME'];
 
             }
         }

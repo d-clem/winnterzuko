@@ -37,7 +37,7 @@
 
     <main>
         <!-- presentation -->
-        <section>
+        <section class="green-card">
             <h1>
                 Présentation de Winnterzuko
             </h1>
@@ -62,7 +62,7 @@
         </section>
 
         <!-- images -->
-        <section id="imageSection">
+        <section class="gray-card" id="imageSection">
             <img src="../static/img/zuko_1.jpg" 
                 alt="image de winnterzuko">
         </section>

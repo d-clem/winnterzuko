@@ -35,7 +35,13 @@ nav {
 main {
     padding: calc(5vw);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 65% 35% ;
+    gap: 1em;
+}
+
+section {
+    padding: calc(10%);
+    border-radius: 15px;
 }
 
 footer {
@@ -110,7 +116,7 @@ img {
 audio {
     width: 100%;
     height: 40px;
-    /* take 2 cols */ 
+    /* takes 2 cols */ 
     grid-column: span 2;
 }
 

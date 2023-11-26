@@ -7,10 +7,20 @@
     border: solid 3px var(--accent);
 }
 
+.green-text {
+    color: var(--primary) !important;
+}
 
+.gray-text {
+    color: var(--secondary) !important;
+}
 
 .green-card {
     background-color: var(--primary) !important;
+}
+
+.gray-card {
+    background-color: var(--secondary) !important;
 }
 
 #up {
