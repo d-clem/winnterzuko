@@ -79,10 +79,24 @@
         </p>
 
         <p>
-            Crédits photos et audio :             
+            Crédits audio :             
 
             <a href="https://www.deezer.com/fr/artist/88895962" target="_blank">
                 Deezer
+            </a>
+        </p>
+
+        <p>
+            Crédits photos :             
+
+            <a href="https://www.deezer.com/fr/artist/88895962" target="_blank">
+                Deezer (Les covers des albums)
+            </a>
+
+            &nbsp; | &nbsp;
+
+            <a href="https://www.pinterest.fr/Lrce303/" target="_blank">
+                Lrce303 sur Pinterest (2eme image de présentation)
             </a>
         </p>
 
