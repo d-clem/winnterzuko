@@ -20,7 +20,7 @@
                 Accueil
             </a>
 
-            <a href="./discographie.php">
+            <a href="./discographie.php"  class="underline">
                 Discographie
             </a>
 

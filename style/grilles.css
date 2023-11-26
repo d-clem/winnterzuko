@@ -52,7 +52,7 @@
     width: 0px;
 }
 
-.main-grid > div > a {
+.main-grid > div > a, .grille-single > div > a {
     text-align: center;
     height: fit-content;
 }

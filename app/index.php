@@ -16,7 +16,7 @@
         <hr>
 
         <nav>
-            <a href="./index.php">
+            <a href="./index.php" class="underline">
                 Accueil
             </a>
 

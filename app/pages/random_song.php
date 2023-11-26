@@ -24,7 +24,7 @@
                 Discographie
             </a>
 
-            <a href="./random_song.php">
+            <a href="./random_song.php"  class="underline">
                 Titre aléatoire
             </a>
 
