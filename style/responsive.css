@@ -23,6 +23,7 @@
 
     nav {
         padding-left: calc(2vw);
+        gap: 1em;
     }
 
     p {
