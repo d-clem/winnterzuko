@@ -28,7 +28,7 @@
 
 .main-grid > div, .grille-single > div {
     width: calc(100% - 30px);
-    height: calc(37.5vh);
+    height: calc(32.5vh);
 
     min-height: 300;
 
@@ -43,6 +43,7 @@
 }
 
 .main-grid > div > div {
+    height: fit-content;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -51,6 +52,10 @@
     width: 0px;
 }
 
+.main-grid > div > a {
+    text-align: center;
+    height: fit-content;
+}
 
 .grille-single {
     text-align: center;

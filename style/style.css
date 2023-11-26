@@ -30,6 +30,8 @@ nav {
     gap: calc(5vw);
 
     padding-left: calc(7.5vw);
+
+    font-size: calc(1.25em);
 }
 
 
@@ -74,7 +76,8 @@ h6 {
 
 p {
     font-size: 1rem;
-    padding: auto;
+    /* padding: auto; */
+    padding-bottom: 10px;
 }
 
 a {

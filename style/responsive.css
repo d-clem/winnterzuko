@@ -22,8 +22,9 @@
     }    
 
     nav {
-        padding-left: 0;
+        padding-left: 10px;
         gap: 1em;
+        font-size: 1em;
     }
 
     p {
@@ -46,4 +47,7 @@
         margin: 0;
     }
     
+    nav {
+        padding-left: 0;
+    }
 }
