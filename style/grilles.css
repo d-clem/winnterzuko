@@ -14,7 +14,7 @@
 .main-2 {
     padding-top: 1em;
     padding-bottom: calc(5vh);
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 40% 60%;
 }
 
 
