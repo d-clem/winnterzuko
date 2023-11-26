@@ -1,0 +1,34 @@
+@media screen and (max-width: 1200px) {
+    .main-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .main-1, .main-2 {
+        grid-template-columns: 1fr;
+    }
+    /* reverse elements order during display */
+    .main-2 {
+        display: flex;
+        flex-direction: column-reverse;
+    } 
+
+
+}
+
+@media screen and (max-width: 850px) {
+    .main-grid, .main-1, .main-2 {
+        grid-template-columns: 1fr;
+        margin: calc(10vw);
+    }    
+
+    nav {
+        padding-left: calc(2vw);
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .main-grid, .main-1, .main-2 {
+        margin: 0;
+    }
+    
+}

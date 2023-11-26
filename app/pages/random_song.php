@@ -16,19 +16,19 @@
         <hr>
 
         <nav>
-            <a href="./index.php">
+            <a href="../index.php">
                 <p>
                     Accueil
                 </p>
             </a>
 
-            <a href="../app/pages/discographie.php">
+            <a href="./discographie.php">
                 <p>
                     Discographie
                 </p>
             </a>
 
-            <a href="../app/pages/random_song.php">
+            <a href="./random_song.php">
                 <p>
                     Titre aléatoire
                 </p>    
