@@ -14,7 +14,7 @@
         <hr>
 
         <nav>
-            <a href="./app/ndex.php">
+            <a href="./app/index.php">
                 Accueil
             </a>
 
