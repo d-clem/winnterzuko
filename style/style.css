@@ -32,16 +32,11 @@ nav {
     padding-left: calc(7.5vw);
 }
 
-main {
-    padding: calc(5vw);
-    display: grid;
-    grid-template-columns: 65% 35% ;
-    gap: 1em;
-}
 
 section {
     padding: calc(10%);
     border-radius: 15px;
+    text-align: justify;
 }
 
 footer {
