@@ -18,11 +18,11 @@
                 Accueil
             </a>
 
-            <a href="../pages/discographie.php">
+            <a href="../app//pages/discographie.php">
                 Discographie
             </a>
 
-            <a href="../pages/random_song.php">
+            <a href="../app//pages/random_song.php">
                 Titre aléatoire
             </a>
 
