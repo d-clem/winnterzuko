@@ -47,6 +47,6 @@
 }
 
 
-.underline {
-    text-decoration: underline;
+.current {
+    background-color: var(--secondary) !important;
 }

@@ -16,17 +16,19 @@
         <hr>
 
         <nav>
-            <a href="../index.php">
-                Accueil
-            </a>
+            <div>
+                <a href="../index.php">
+                    Accueil
+                </a>
 
-            <a href="./discographie.php"  class="underline">
-                Discographie
-            </a>
+                <a href="./discographie.php">
+                    Discographie
+                </a>
 
-            <a href="./random_song.php">
-                Titre aléatoire
-            </a>
+                <a href="./random_song.php">
+                    Titre aléatoire
+                </a>
+            </div>
 
             <a href="#footer">
                 Crédits
@@ -40,7 +42,6 @@
 
     <a href="#header" id="up">
         <span class="fa fa-arrow-up"></span>
-
     </a>
     <br><br>
 

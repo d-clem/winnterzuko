@@ -26,12 +26,21 @@ header {
 nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     gap: calc(5vw);
 
-    padding-left: calc(7.5vw);
+    padding: 0 calc(7.5vw);
 
     font-size: calc(1.25em);
+
+    & div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: calc(1.5vw);
+    
+    }
 }
 
 
@@ -98,7 +107,7 @@ a::before {
     width: 0;
     height: 2px; 
     background-color: var(--accent); 
-    transition: width 0.3s ease; 
+    transition: 0.3s ease; 
 }
 
 a:hover::before {

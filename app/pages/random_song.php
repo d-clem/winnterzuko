@@ -16,17 +16,21 @@
         <hr>
 
         <nav>
-            <a href="../index.php">
-                Accueil
-            </a>
+            <div>
 
-            <a href="./discographie.php">
-                Discographie
-            </a>
+                <a href="../index.php">
+                    Accueil
+                </a>
 
-            <a href="./random_song.php"  class="underline">
-                Titre aléatoire
-            </a>
+                <a href="./discographie.php">
+                    Discographie
+                </a>
+
+                <a href="./random_song.php">
+                    Titre aléatoire
+                </a>
+            </div>
+
 
             <a href="#footer">
                 Crédits

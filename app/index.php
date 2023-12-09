@@ -16,17 +16,19 @@
         <hr>
 
         <nav>
-            <a href="./index.php" class="underline">
-                Accueil
-            </a>
+            <div>
+                <a href="./index.php">
+                    Accueil
+                </a>
 
-            <a href="../app/pages/discographie.php">
-                Discographie
-            </a>
+                <a href="../app/pages/discographie.php">
+                    Discographie
+                </a>
 
-            <a href="../app/pages/random_song.php">
-                Titre aléatoire
-            </a>
+                <a href="../app/pages/random_song.php">
+                    Titre aléatoire
+                </a>
+            </div>
 
             <a href="#footer">
                 Crédits
