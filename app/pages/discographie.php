@@ -103,7 +103,7 @@
         </p>
 
         <p>
-            Crédits photos :             
+            Crédits photos :
 
             <a href="https://www.deezer.com/fr/artist/88895962" target="_blank">
                 Deezer (Les covers des albums)

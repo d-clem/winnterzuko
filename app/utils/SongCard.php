@@ -32,19 +32,21 @@ class SongCard
 
     public function __construct(array $json_data) 
     {
-        $this->id = $json_data['SNG_ID'];
+        $this->id = $json_data['id'];
         $this->title = self::getTitleFromJson($json_data);
-        $this->project = $json_data['ALB_TITLE'];
-        $this->album_url = self::getAlbumUrl($json_data['ALB_ID']);
+        $this->project = $json_data['album']['title'];
+        $this->album_url = self::getAlbumUrl($json_data['id']);
 
-        $this->duration = $json_data['DURATION'];
-        $this->feats = self::getFeatsFromJson($json_data['ARTISTS']);
+        $this->duration = $json_data['duration'];
+        $this->feats = self::getFeatsFromJson($json_data['contributors']);
         
         // si je souhaite afficher le cover avec le widget deezer
         // $this->cover_url = self::getCoverUrlFromDeeze($this->id);
-        $this->cover_url = self::getCover($json_data['ALB_PICTURE']);
+        
+//        $this->cover_url = self::getCover($json_data['album']['cover_medium']);
+        $this->cover_url = $json_data['album']['cover_medium'];
 
-        $this->mp3_url = $json_data['MEDIA'][0]['HREF'];
+        $this->mp3_url = $json_data['preview'];
 
         if (in_array($this->title, self::prefs)) {
             $this->class = "green-card";
@@ -134,7 +136,7 @@ class SongCard
 
     public static function getTitleFromJson(array $json_data) : string
     {
-        $title = $json_data['SNG_TITLE'];
+        $title = $json_data['title'];
         // remove parenthesis and what's after
         $title = preg_replace("/\s*\(.*\)/", "", $title);
         
@@ -151,8 +153,8 @@ class SongCard
     {
         $feats = [];
         foreach ($json_data as $feat) {
-            if ($feat['ART_NAME'] != "winnterzuko") {
-                $feats[$feat['ART_ID']] = $feat['ART_NAME'];
+            if ($feat['name'] != "winnterzuko") {
+                $feats[$feat['id']] = $feat['name'];
 
             }
         }

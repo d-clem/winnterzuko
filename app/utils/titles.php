@@ -20,7 +20,7 @@ try {
     $json = json_decode($file_content, true);
 
     // create a SongCard for each song
-    foreach ($json["TOP"]["data"] as $data_song) {
+    foreach ($json as $data_song) {
         $liste_titres[] = new SongCard($data_song);
     }
 
